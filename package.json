@@ -1,0 +1,20 @@
+{
+  "name": "playwrightjavascript15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
+    "test:ui": "npx playwright test Test12.spec.js , Test10.spec.js ",
+    "test:api": "npx playwright test TC_01_api_e2e.test.js --project=Chrome",
+    "test:ci": "npx playwright test --project=Chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "allure-playwright": "^3.4.4"
+  }
+}
