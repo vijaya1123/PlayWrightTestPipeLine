@@ -15,5 +15,14 @@ pipeline {
     }
     }
 
+post {
+    always {
+        archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+    }
+    failure {
+        echo 'Tests failed! Check the report.'
+    }
+}
+
 }
     
