@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
-    "test:ui": "npx playwright test Test12.spec.js , Test10.spec.js ",
+    "test:ui": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
+    "test": "npx playwright test Test12.spec.js , Test10.spec.js ",
     "test:api": "npx playwright test TC_01_api_e2e.test.js --project=Chrome",
     "test:ci": "npx playwright test --project=Chrome"
   },
