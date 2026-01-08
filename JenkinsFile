@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+  
+    stages {
+        stage('Install dependencies') {
+            steps {
+                bat 'npm install'
+            }
+        }
+  
+    stage('Checkout') {
+      steps {
+        git branch: 'master',
+             bat 'npm run test'
+      }
+    }
+    }
+
+}
+    
