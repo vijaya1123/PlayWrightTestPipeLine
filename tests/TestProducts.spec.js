@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test(' @UI has title', async ({ page }) => {
  await page.goto('https://demoblaze.com/index.html');
 
 // page.waitForSelector("//div[@id='tbodyid']//h4/a")

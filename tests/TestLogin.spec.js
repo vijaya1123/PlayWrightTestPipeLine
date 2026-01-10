@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test(' has title', async ({ page }) => {
   await page.goto('https://demoblaze.com/index.html');
 
   await page.click('id=signin2');
