@@ -26,6 +26,7 @@ export default defineConfig({
   reporter: [
     ['html'],
     ['list'], // default console output
+      ['@estruyf/github-actions-reporter'],
     ['allure-playwright']
   ],
 
