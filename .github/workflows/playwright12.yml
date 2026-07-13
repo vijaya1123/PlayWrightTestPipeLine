@@ -30,3 +30,12 @@ jobs:
       # Run tests
       - name: Run Playwright tests
         run: npm run test:master
+        
+      - name: Generate Allure report
+        run: npx allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
