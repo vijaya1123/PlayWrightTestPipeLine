@@ -18,7 +18,12 @@ jobs:
           command: npx playwright install --with-deps
       - run:
           name: Run Playwright tests
-          command: npm run test:master
+          command: npm run test:master --reporter=line,allure-playwright
+            mkdir -p allure-report && npx allure generate allure-results --clean -o allure-report
+
+      - store_artifacts:
+          path: allure-report
+          destination: allure-report
 
 workflows:
   run-tests:
