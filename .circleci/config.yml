@@ -8,6 +8,7 @@ jobs:
     docker:
       - image: mcr.microsoft.com/playwright:v1.45.0-jammy
     steps:
+    
       - checkout
       - run:
           name: Install dependencies
